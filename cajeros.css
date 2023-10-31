@@ -1,0 +1,10 @@
+html {
+    background: pink;
+}
+
+#ingresar{
+    display:block;
+    width: 60px;
+    height: 30px;
+    
+}
