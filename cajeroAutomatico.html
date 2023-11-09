@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cajero</title>
-    <link rel="stylesheet" type="text/css" href="cajeros.css">
-    
+    <title>Cajero Automático</title>
+    <link rel="stylesheet" type="text/css" href="cajeros1.css">
 </head>
-    <header>
-        <h1>cajero</h1>
-    </header>
-
-        <main>
-            <section>
-                <div id="form"></div>
-                    <label>
-                        <h1>nombre</h1>
-                        <input type="text"
-                        placeholder="usuario"
-                        id="user"
-                         required></input>
-                    
-                    </label>
-                <br>
-                    <label>
-                        <h2>contraseña</h2>
-                        <input type="password";
-                        placeholder="contraseña";
-                        id="password"></input>
-
-                    </label>
-
-
-                <button id="login">Ingresar</button>
-
-                </div>
-               
-  
-            </section>
-        </main>
-
-
-        <script src="cajero.js"></script>
 
 <body>
-    
-    
+    <header>
+        <h1 id="inicio">Bienvenido</h1>
+    </header>
+
+    <section>
+        <div id="form">
+            <div class="mb-3">
+                <label for="usua" class="form-label">Nombre de Usuario</label>
+                <input id="usua" type="text" class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input id="contraseña" type="password" class="form-control">
+            </div>
+            <button id="boton" type="button" class="btn btn-outline-warning">Ingresar</button>
+        </div>
+    </section>
+
+        
+
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary" style="display: none;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="cartausuario" class="card" style="width: 18rem; display: none;">
+            <div class="card-body">
+                <h5 id="apodo" class="card-title"></h5>
+                <p id="loquetienes" class="card-text"></p>
+                <p id="saldo" class="card-text"></p>
+                <p id="ingresa" class="card-text"></p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input id="capital" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+                <button id="botonD" type="button" class="btn btn-outline-success">Depositar</button>
+                <button id="botonR" type="button" class="btn btn-outline-danger">Retirar</button>
+                <button id="nuevoSaldo" type="button" class="btn btn-outline-info">Consultar Saldo</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="cajero1.js"></script>
 </body>
+
 </html>
